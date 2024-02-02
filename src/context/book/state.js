@@ -1,5 +1,5 @@
 // TODO: Load/parse 'favoriteBooks' from localStorage
-const favBooks = JSON.parse(localStorage.getItem('favoriteBooks'))
+const listOfBooks = JSON.parse(localStorage.getItem('favoriteBooks'))
 
 // TODO: Export initial state object as default
 // initial state should have keys bookSearchResults and favoriteBooks
@@ -7,9 +7,9 @@ const favBooks = JSON.parse(localStorage.getItem('favoriteBooks'))
 // favoriteBooks should be the value from localStorage or an empty array if localStorage value is falsy
 const initialState = {
     bookSearchResults: [],
-    favoriteBooks: !favBooks ? [] : favBooks
+    favoriteBooks: !listOfBooks ? [] : listOfBooks
 }
 
 export default initialState
 
-// if there is no value from favBooks, then it will give empty array, otherwise, it will take the value from favBooks for favoriteBooks
+// Quynh's note: do not forget the question mark - if there is no value from listOfBooks, then it will give empty array, otherwise, it will take the value from listOfBooks for favoriteBooks

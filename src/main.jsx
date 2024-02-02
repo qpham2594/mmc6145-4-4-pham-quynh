@@ -16,3 +16,5 @@ root.render(
     </Router>
   </React.StrictMode>
 );
+
+// Quynh's notes: By wrapping App with BookProvider, it gives App the access to BookProvider
